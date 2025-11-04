@@ -127,13 +127,14 @@ section ul li {
     padding: 10px;
     gap: 5px;
     justify-content: center;
-    
+
 }
-    /* videitos */
-    .artista__videito {
-        width: 400px;
-        height: 300px;
-    }
+
+/* videitos */
+.artista__videito {
+    width: 400px;
+    height: 300px;
+}
 
 
 /* ------------------------------FINAL ARTISTAS */
@@ -329,7 +330,7 @@ section ul li {
     padding: 5px;
 }
 
-footer div div h4{
+footer div div h4 {
     font-size: 16px;
 }
 
@@ -341,4 +342,40 @@ footer div div h4{
     bottom: 10px;
     right: 10px;
     width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .pie-de-pagina {
+        display: flex;
+        font-size: 5%;
+        background-color: #FFA500;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1px;
+    }
+
+    footer div div h4 {
+        font-size: 10px;
+       
+    }
+
+    article h3{
+
+        font-size: 20px;
+    }
+
+.features-contenedor {
+    width: 100;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    row-gap: 5px;
+    padding: 10px;
+    background-color: #ececec;
+    font-size: 80%;
+}
+
+
 }
