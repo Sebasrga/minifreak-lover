@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINIFREAK Lovers🎶</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css">
 </head>
@@ -12,16 +15,37 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a href="../index.html"><img class="header__logo" src="../assets/minifreak-logo.png" alt="Logo"></a>
-        <h1 class="header__titulo">MiniFreak | Sintetizador hibrido algorítmico</h1>
-        <nav class="header__navbar">
-            <ul class="navbar__menu">
-                <li class="navbar-item"><a href="../index.html">Home</a></li>
-                <li class="navbar-item"><a href="../pages/features.html">Características</a></li>
-                <li class="navbar-item seleccion"><a href="#">Artistas</a></li>
-                <li class="navbar-item"><a href="../pages/news.html">Otros sintes</a></li>
-                <li class="navbar-item"><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a href="#"><img class="header__logo" src="../assets/minifreak-logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/features.html">Características</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/news.html">Otros sintes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">MiniFreak | Sintetizador hibrido
+                                algorítmico</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,8 +60,12 @@
                 <div class="artista-info">
                     <h4 class="artista__nombre">Maxime Audfray</h4>
                     <p class="artista__destaca">KiK</p>
-                    <p class="artista__texto">MiniFreak es mi nuevo sintetizador digital favorito; es increíblemente versátil y se puede usar en prácticamente cualquier género que se me ocurra. La mayor ventaja respecto a los sintetizadores convencionales son sus diferentes motores, cada uno con su propio carácter y potencia.</p>
-                    <p class="artista__texto">Maxime Audfray es diseñador de sonido en Arturia desde hace algunos años y le gusta hacer ruidos con máquinas como pasatiempo.</p>
+                    <p class="artista__texto">MiniFreak es mi nuevo sintetizador digital favorito; es increíblemente
+                        versátil y se puede usar en prácticamente cualquier género que se me ocurra. La mayor ventaja
+                        respecto a los sintetizadores convencionales son sus diferentes motores, cada uno con su propio
+                        carácter y potencia.</p>
+                    <p class="artista__texto">Maxime Audfray es diseñador de sonido en Arturia desde hace algunos años y
+                        le gusta hacer ruidos con máquinas como pasatiempo.</p>
                 </div>
             </div>
             <div class="artiatas__item">
@@ -45,8 +73,16 @@
                 <div class="artista-info">
                     <h4 class="artista__nombre">Victor Morello</h4>
                     <p class="artista__destaca">Impale</p>
-                    <p class="artista__texto">Durante mi investigación inicial sobre las capacidades sonoras de la máquina, sabía que quería probar un par de sonidos de bajo exagerados con cantidades generosas (casi cómicas) de distorsión. Impale es uno de ellos. La técnica utilizada está inspirada en el sonido de artistas como Emptyset, Shapednoise y Mick Gordon. Consiste en usar sonidos simples al principio, seguidos de extensas cadenas de procesamiento que incluyen varias etapas de distorsión ingeniosas. Luego, a veces se vuelve a usar un procesamiento dinámico intenso al final. Estas intrincadas cadenas hacen que cualquier cambio de dinámica, cualquier ruido de fondo añadido anteriormente en la cadena, tenga un impacto drástico en el sonido final. La capacidad de apilar efectos en MiniFreak (aquí, un Chorus seguido de dos efectos de Distorsión al final) permite emular este tipo de cadena hasta cierto punto.</p>
-                    <p class="artista__texto">Soy productor de música electrónica, diseñador de sonido y entusiasta de la informática. Trabajé durante 5 años como diseñador de sonido interno para Arturia, donde me encargué tanto del sonido como de la ergonomía de productos como MatrixBrute, Pigments y PolyBrute. Actualmente creo música experimental como Zero Crossing Point, explorando emociones intensas y texturas abrasivas. En mi tiempo libre, también creo videojuegos y experimento con gráficos 3D.</p>
+                    <p class="artista__texto">Durante mi investigación inicial sobre las capacidades sonoras de la
+                        máquina, sabía que quería probar un par de sonidos de bajo exagerados con cantidades generosas
+                        (casi cómicas) de distorsión. Impale es uno de ellos. Consiste en usar sonidos simples al
+                        principio, seguidos de extensas cadenas de procesamiento que incluyen varias etapas de
+                        distorsión ingeniosas. La capacidad de apilar efectos en MiniFreak (aquí, un Chorus seguido de dos efectos de Distorsión
+                        al final) permite emular este tipo de cadena hasta cierto punto.</p>
+                    <p class="artista__texto">Soy productor de música electrónica, diseñador de sonido y entusiasta de
+                        la informática. Trabajé durante 5 años como diseñador de sonido interno para Arturia, donde me
+                        encargué tanto del sonido como de la ergonomía de productos como MatrixBrute, Pigments y
+                        PolyBrute. Actualmente creo música experimental como Zero Crossing Point.</p>
                 </div>
             </div>
             <div class="artiatas__item">
@@ -54,8 +90,16 @@
                 <div class="artista-info">
                     <h4 class="artista__nombre">Yuli Yolo</h4>
                     <p class="artista__destaca">Seet</p>
-                    <p class="artista__texto">Siempre me encanta tocar con pequeñas teclas percusivas orgánicas. Construyo un sonido sencillo de teclas Fm con el oscilador algorítmico Two OPFM. El sonido puede transformarse desde un martillo imaginario golpeando una púa hasta una especie de órgano de campanas mediante las macros M1 y M2. Las dos macros controlan la mezcla de osciladores y la relación de FM. La velocidad también es una parte importante de la modulación del sonido; me gusta cuando mis dedos están conectados al sonido.</p>
-                    <p class="artista__texto">Yuli Yolo es un diseñador de sonido afincado en el sur de Francia. Compositor musical retirado, ahora trabaja como creador de sonido en la industria del audio y los videojuegos. Centrado en su visión sonora, continúa explorando la fusión entre síntesis y expresividad.</p>
+                    <p class="artista__texto">Siempre me encanta tocar con pequeñas teclas percusivas orgánicas.
+                        Construyo un sonido sencillo de teclas Fm con el oscilador algorítmico Two OPFM. El sonido puede
+                        transformarse desde un martillo imaginario golpeando una púa hasta una especie de órgano de
+                        campanas mediante las macros M1 y M2. Las dos macros controlan la mezcla de osciladores y la
+                        relación de FM. La velocidad también es una parte importante de la modulación del sonido; me
+                        gusta cuando mis dedos están conectados al sonido.</p>
+                    <p class="artista__texto">Yuli Yolo es un diseñador de sonido afincado en el sur de Francia.
+                        Compositor musical retirado, ahora trabaja como creador de sonido en la industria del audio y
+                        los videojuegos. Centrado en su visión sonora, continúa explorando la fusión entre síntesis y
+                        expresividad.</p>
                 </div>
             </div>
             <div class="artiatas__item">
@@ -63,8 +107,14 @@
                 <div class="artista-info">
                     <h4 class="artista__nombre">Red Means Recording</h4>
                     <p class="artista__destaca">DFAME</p>
-                    <p class="artista__texto">Quería intentar crear una secuencia que reflejara el estilo particular de síntesis de percusión analógica del Moog DFAM, y que fuera realmente manejable con las macros, la rueda de modulación y los controles del panel frontal. Utilicé el motor Noise Oscillator, que permite equilibrar diferentes tipos de ruido manteniendo la presencia de un bombo.</p>
-                    <p class="artista__texto">Me llamo Jeremy y soy músico, intérprete y profesor. Hago vídeos sobre tecnología musical para el canal de YouTube Red Means Recording. Compongo música bajo el seudónimo de Jeremy Blake, utilizando prácticamente cualquier cosa que tenga a mano, incluyendo software, hardware y sintetizadores modulares.</p>
+                    <p class="artista__texto">Quería intentar crear una secuencia que reflejara el estilo particular de
+                        síntesis de percusión analógica del Moog DFAM, y que fuera realmente manejable con las macros,
+                        la rueda de modulación y los controles del panel frontal. Utilicé el motor Noise Oscillator, que
+                        permite equilibrar diferentes tipos de ruido manteniendo la presencia de un bombo.</p>
+                    <p class="artista__texto">Me llamo Jeremy y soy músico, intérprete y profesor. Hago vídeos sobre
+                        tecnología musical para el canal de YouTube Red Means Recording. Compongo música bajo el
+                        seudónimo de Jeremy Blake, utilizando prácticamente cualquier cosa que tenga a mano, incluyendo
+                        software, hardware y sintetizadores modulares.</p>
                 </div>
             </div>
             <!-- VIDEOS -->
@@ -119,6 +169,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
