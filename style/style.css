@@ -11,13 +11,16 @@
 /* ------------------------------INICIO BARRA DE NAVEGACION */
 header {
     position: sticky;
-    top: 0;
+    /* top: 0;
     display: flex;
     gap: 20px;
     background-color: #FFA500;
     width: 100%;
     align-items: center;
+    justify-content: center; */
+    display: flex;
     justify-content: center;
+    background-color: #FFA500;
 }
 
 .header__logo {
@@ -78,6 +81,7 @@ header {
 .imagen-minifreak {
     display: flex;
     justify-content: center;
+    padding: 60px 0 0 0;
 }
 
 .main-imagen {
