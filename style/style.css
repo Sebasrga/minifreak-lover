@@ -6,8 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Sansation", sans-serif;
-    
 }
+
 /* ------------------------------INICIO BARRA DE NAVEGACION */
 header {
     position: sticky;
@@ -19,98 +19,110 @@ header {
     align-items: center;
     justify-content: center;
 }
-.header__logo{
+
+.header__logo {
     width: 137px;
 }
-.header__titulo{
+
+.header__titulo {
     font-size: 150%;
     margin: 0 0 0 40px;
 }
-.navbar__menu{
+
+.navbar__menu {
     display: flex;
     list-style-type: none;
     gap: 10px;
     align-items: center;
     height: 100%;
 }
-.navbar-item a{
+
+.navbar-item a {
     text-decoration: none;
     color: #8B4500;
 }
-.navbar-item.seleccion a{
-background-color: #FF7F24
+
+.navbar-item.seleccion a {
+    background-color: #FF7F24
 }
-.navbar-item a:hover{
-   background-color: #FFE5B4;
+
+.navbar-item a:hover {
+    background-color: #FFE5B4;
 }
+
 /* ------------------------------FIN BARRA DE NAVEGACION */
 
-.titulo-seccion{
+.titulo-seccion {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     /* padding: 5px; */
     padding-block: 20px;
-    background-color:#ececec;
+    background-color: #ececec;
 }
 
 
 /* ------------------------------INICIO MAIN */
-
-.main-principal{
-    background-color:#ececec;
+.main-principal {
+    background-color: #ececec;
 }
 
-.main-section{
+.main-section {
     width: 80%;
     /* background-color: red; */
     padding: 5px;
     margin-left: 30px;
 }
-.imagen-minifreak{
+
+.imagen-minifreak {
     display: flex;
     justify-content: center;
 }
-.main-imagen{
+
+.main-imagen {
     width: 50%;
 }
-.intro-items{
+
+.intro-items {
     padding: 10px;
 }
-section ul{
+
+section ul {
     margin-top: 10px;
 }
-section ul li{
-    margin-left: 30px;     
+
+section ul li {
+    margin-left: 30px;
     list-style-type: disc;
 }
-.suscripcion{
+
+.suscripcion {
     position: fixed;
     bottom: 10px;
     right: 10px;
     width: 50px;
 }
+
 /* ------------------------------FIN MAIN */
 
 /* ------------------------------INICIO ARTISTAS */
-.artistas{
+.artistas {
     display: flex;
     flex-direction: column;
     padding: 30px 60px 60px 60px;
     gap: 10px;
-    background-color:#ececec;
-
+    background-color: #ececec;
 }
 
-.artiatas__item{
+.artiatas__item {
     background-color: #Cc5500;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
 }
 
-.artista-info{
+.artista-info {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -118,117 +130,108 @@ section ul li{
     justify-content: center;
 
     /* videitos */
-    .artista__videito{
+    .artista__videito {
         width: 400px;
         height: 300px;
     }
 }
+
 /* ------------------------------FINAL ARTISTAS */
 
 /* ------------------------------INICIO FEATURES */
-.features-contenedor{
+.features-contenedor {
     width: 100;
-    /* height: 400px; */
     display: grid;
-    /* border: 2px solid red; */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     place-items: center;
     row-gap: 10px;
     padding: 20px;
-    background-color:#ececec;
+    background-color: #ececec;
 }
-.caja.matriz{
+
+.caja.matriz {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-.matriz-imagen{
+
+.matriz-imagen {
     grid-column: 2/3;
     grid-row: 1/2;
     width: 60%;
-}   
-.caja.filtro{
+}
+
+.caja.filtro {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-.filtro-imagen{
-   grid-column: 1/2;
-    grid-row: 2/3; 
+
+.filtro-imagen {
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
-.caja.envolvente{
-   grid-column: 1/2; 
-   grid-row: 3/4;
+
+.caja.envolvente {
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
-.envolvente-imagen{
-   grid-column: 2/3; 
-   grid-row: 3/4; 
-   width: 65%;
+
+.envolvente-imagen {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 65%;
 }
-.caja.osciladores{
-grid-column: 2/3; 
-grid-row: 4/5;
+
+.caja.osciladores {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
-.osciladores-imagen{
-   grid-column: 1/2; 
-grid-row: 4/5; 
-width: 70%;
+
+.osciladores-imagen {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 70%;
 }
+
 /* ------------------------------FINAL FEATURES */
 
 /* ------------------------------INICIO NEWS - NUEVOS SINTES */
-
-
-.nuevos-sintes{
+.nuevos-sintes {
     display: flex;
     padding: 30px;
     gap: 10px;
 }
-.sinte-item{
-    background-color:#ececec;
+
+.sinte-item {
+    background-color: #ececec;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    
 }
-.sinte__imagen{
+
+.sinte__imagen {
     max-width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------------------------FINAL FEATURES */
 
 /* ------------------------------INICIO CONTACTO */
-
-
-.contecto-contenedor{
+.contecto-contenedor {
     width: 100%;
     height: 350px;
     display: grid;
-    
-    /* border: 2px solid red; */
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
     place-items: center;
     border-radius: 10px;
     overflow: hidden;
-   
+
 }
 
-.contacto-info{
+.contacto-info {
     width: 100;
     height: 300px;
     display: grid;
@@ -238,101 +241,96 @@ width: 70%;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "nom nom"
-    "mai mai"
-    "cel cel"
-    "tex tex"
-    "btna btnb";
+    grid-template-areas:
+        "nom nom"
+        "mai mai"
+        "cel cel"
+        "tex tex"
+        "btna btnb";
 }
 
-.nom{
+.nom {
     grid-area: nom;
 }
 
-.mai{
+.mai {
     grid-area: mai;
 }
 
-.cel{
+.cel {
     grid-area: cel;
 }
 
-.tex{
+.tex {
     grid-area: tex;
 }
 
-.contacto-opinion{
-width: 100;
+.contacto-opinion {
+    width: 100;
     height: 300px;
     display: grid;
     border: 2px solid whitesmoke;
     border-radius: 10px;
-    /* border: 2px solid red; */
     padding: 10px;
     place-items: center;
-    
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "contacto__opinion__texto contacto__opinion"
-    "btnop btnop";
-
-
+    grid-template-areas:
+        "contacto__opinion__texto contacto__opinion"
+        "btnop btnop";
 }
-.contacto__opinion__texto{
+
+.contacto__opinion__texto {
     grid-area: contacto__opinion__texto;
 }
 
-.contacto__opinion{
+.contacto__opinion {
     grid-area: contacto__opinion;
 }
 
-.btnop{
+.btnop {
     grid-area: btnop;
 }
 
-
-.btnop__flex{
+.btnop__flex {
     display: flex;
     gap: 10px;
 }
 
-.mensaje-contacto{
+.mensaje-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.mensaje_1{
-    color:#8B4500
+.mensaje_1 {
+    color: #8B4500
 }
 
-.mensaje_2{
+.mensaje_2 {
     color: #Cc5500;
 }
-.mensaje_3{
+
+.mensaje_3 {
     color: #FFA500;
 }
 
-
 /* ------------------------------FINAL CONTACTO */
 
-
-
 /* ------------------------------INICIO PIE DE PAGINA */
-.pie-de-pagina{
-display: flex;
-font-size: 10px;
-background-color: #FFA500;
-align-items: center;
-justify-content: space-around;
-padding: 5px;
+.pie-de-pagina {
+    display: flex;
+    font-size: 10px;
+    background-color: #FFA500;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
 }
+
 /* ------------------------------FIN PIE DE PAGINA */
 
 /* ------------------------------ ICONO FIXED */
-.suscripcion{
+.suscripcion {
     position: fixed;
     bottom: 10px;
     right: 10px;
