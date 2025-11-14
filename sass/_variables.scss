@@ -1,7 +1,28 @@
 /* Tipografias: Sensation, Pompire y Agdasima */
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Pompiere&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-$fuente: Sansation;
-$background: #ececec;
-$fuente-primaria-color: black;
-$fuente-secundaria-color: 
+$fuente-pri: Sansation;
+$background-color-pri: #ececec;
+$background-color-sec: #FFA500;
+$fuente-color-pri: black;
+$fuente-color-sec: #8B4500;
+$fuente-color-ter: #FFE5B4; //HOVER
+
+*{
+font-family: $fuente-pri;
+color: $fuente-color-pri;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.titulo-seleccion{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0 0 0;
+    background-color: $background-color-pri;
+    font-size: 60%;
+}

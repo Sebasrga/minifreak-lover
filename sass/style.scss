@@ -1,0 +1,12 @@
+//Archivo sass principal
+//sass --watch sass/style.scss style/style.css
+
+@use "variables";
+@use "artistas";
+@use "contacto";
+@use "features";
+@use "footer";
+@use "header";
+@use "news";
+@use "index";
+

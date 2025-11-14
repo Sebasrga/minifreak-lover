@@ -1,0 +1,38 @@
+@use "variables" as v;
+
+main {
+
+    .titulo-seccion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0 0 0;
+        background-color: v.$background-color-pri;
+        font-size: 60%;
+
+        :hover {
+            background-color: v.$fuente-color-ter;
+        }
+    }
+
+    .nuevos-sintes {
+        display: flex;
+        padding: 30px;
+        gap: 10px;
+
+        .sinte-item {
+            background-color: #ececec;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+
+            .sinte__imagen {
+                max-width: 100%;
+            }
+        }
+    }
+}

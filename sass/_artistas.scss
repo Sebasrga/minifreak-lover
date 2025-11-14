@@ -1,0 +1,49 @@
+@use "variables" as v;
+
+
+
+main {
+
+    .titulo-seccion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0 0 0;
+        background-color: v.$background-color-pri;
+        font-size: 60%;
+
+        :hover {
+            background-color: v.$fuente-color-ter;
+        }
+    }
+
+    .artistas {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 60px 60px 60px;
+        gap: 10px;
+        background-color: #ececec;
+
+        .artiatas__item {
+            background-color: #Cc5500;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+
+            .artista-info {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                gap: 5px;
+                justify-content: center;
+
+            }
+
+            .artista__videito {
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+}

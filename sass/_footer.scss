@@ -1,0 +1,13 @@
+@use "variables" as v;
+
+.pie-de-pagina {
+    display: flex;
+    background-color: v.$background-color-sec;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+
+    h4 {
+        font-size: 16px;
+    }
+}
