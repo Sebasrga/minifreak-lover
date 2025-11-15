@@ -1,0 +1,126 @@
+@use "variables" as v;
+
+
+main {
+
+    .titulo-seccion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 90px 0 0 0;
+        background-color: v.$background-color-pri;
+        font-size: 60%;
+
+        :hover {
+            background-color: v.$fuente-color-ter;
+        }
+    }
+
+    .contacto-contenedor {
+        width: 100%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        place-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .contacto-info {
+            width: 100;
+            height: 350px;
+            display: grid;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            padding: 10px;
+            place-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas:
+                "nom nom"
+                "mai mai"
+                "cel cel"
+                "tex tex"
+                "btna btnb";
+
+
+            .nom {
+                grid-area: nom;
+            }
+
+            .mai {
+                grid-area: mai;
+            }
+
+            .cel {
+                grid-area: cel;
+            }
+
+            .tex {
+                grid-area: tex;
+            }
+        }
+
+        .contacto-opinion {
+            width: 100;
+            height: 350px;
+            display: grid;
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            padding: 10px;
+            place-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "contacto__opinion__texto contacto__opinion"
+                "btnop btnop";
+
+
+            .contacto__opinion__texto {
+                grid-area: contacto__opinion__texto;
+            }
+
+
+            .contacto__opinion {
+                grid-area: contacto__opinion;
+            }
+
+            .btnop {
+                grid-area: btnop;
+            }
+
+            .btnop__flex {
+                display: flex;
+                gap: 10px;
+            }
+
+
+        }
+
+
+    }
+
+    .mensaje-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .mensaje_1 {
+            color: #8B4500;
+        }
+
+        .mensaje_2 {
+            color: #Cc5500;
+        }
+
+        .mensaje_3 {
+            color: #FFA500;
+        }
+
+    }
+
+
+
+}
