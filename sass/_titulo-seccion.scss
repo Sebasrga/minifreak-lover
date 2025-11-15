@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+main {
+    .titulo-seccion {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+        background-color: v.$background-color-pri;
+
+        >h1 {
+            font-size: 3rem;
+        }
+
+        :hover {
+            background-color: v.$fuente-color-ter;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+main {
+    .titulo-seccion {
+       
+margin-top: 70px;
+
+        >h1 {
+            font-size: 1.2rem;
+            font-weight: bolder;
+         }
+    }
+}
+}

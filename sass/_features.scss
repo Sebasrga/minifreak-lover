@@ -2,21 +2,7 @@
 
 main {
 
-    .titulo-seccion {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 90px 0 0 0;
-        background-color: v.$background-color-pri;
-        
-        > h1 {font-size: 40px;}
-
-        :hover {
-            background-color: v.$fuente-color-ter;
-        }
-
-    }
+    //titulo seccion
 
     .features-contenedor {
         width: 100;
@@ -76,20 +62,21 @@ main {
 
     @media screen and (max-width: 480px) {
 
-        .titulo-seccion > h1{
-            font-size: 20px;
-        }
+    
 
         .features-contenedor {
-            width: 100;
-            display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(8, 1fr);
+            grid-template-rows: repeat(8, auto);
             place-items: center;
             row-gap: 5px;
             padding: 10px;
+            
+             h4{
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
 
-            font-size: 80%;
+            font-size: 1rem;
 
             .matriz-imagen {
                 grid-column: 1/2;

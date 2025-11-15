@@ -23,12 +23,24 @@ main .titulo-seccion {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 90px 0 0 0;
+  margin-top: 90px;
   background-color: #ececec;
-  font-size: 60%;
+}
+main .titulo-seccion > h1 {
+  font-size: 3rem;
 }
 main .titulo-seccion :hover {
   background-color: #FFE5B4;
+}
+
+@media screen and (max-width: 480px) {
+  main .titulo-seccion {
+    margin-top: 70px;
+  }
+  main .titulo-seccion > h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
 }
 main .artistas {
   display: flex;
@@ -58,23 +70,11 @@ main .artistas .artiatas__item .artista__videito {
 @media screen and (max-width: 480px) {
   main .artistas {
     flex-direction: column;
-    padding: 30px 30px 60px 30px;
+    padding: 5px 30px 60px 30px;
   }
   main .artistas .artiatas__item {
     flex-direction: column;
   }
-}
-main .titulo-seccion {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 90px 0 0 0;
-  background-color: #ececec;
-  font-size: 60%;
-}
-main .titulo-seccion :hover {
-  background-color: #FFE5B4;
 }
 main .contacto-contenedor {
   width: 100%;
@@ -150,20 +150,6 @@ main .mensaje-contacto .mensaje_3 {
   color: #FFA500;
 }
 
-main .titulo-seccion {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 90px 0 0 0;
-  background-color: #ececec;
-}
-main .titulo-seccion > h1 {
-  font-size: 40px;
-}
-main .titulo-seccion :hover {
-  background-color: #FFE5B4;
-}
 main .features-contenedor {
   width: 100;
   display: grid;
@@ -211,18 +197,19 @@ main .features-contenedor .osciladores-imagen {
   width: 90%;
 }
 @media screen and (max-width: 480px) {
-  main .titulo-seccion > h1 {
-    font-size: 20px;
-  }
   main .features-contenedor {
-    width: 100;
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto);
     place-items: center;
     row-gap: 5px;
     padding: 10px;
-    font-size: 80%;
+  }
+  main .features-contenedor h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  main .features-contenedor {
+    font-size: 1rem;
   }
   main .features-contenedor .matriz-imagen {
     grid-column: 1/2;
@@ -295,18 +282,6 @@ header .header__logo {
     width: 100px;
   }
 }
-main .titulo-seccion {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 90px 0 0 0;
-  background-color: #ececec;
-  font-size: 60%;
-}
-main .titulo-seccion :hover {
-  background-color: #FFE5B4;
-}
 main .nuevos-sintes {
   display: flex;
   padding: 30px;
@@ -325,13 +300,18 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
   max-width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  main .nuevos-sintes {
+    flex-direction: column;
+  }
+}
 .main-principal {
   background-color: #ececec;
 }
 .main-principal .imagen-minifreak {
   display: flex;
   justify-content: center;
-  padding: 60px 0 0 0;
+  padding: 5px 0 0 0;
 }
 .main-principal .imagen-minifreak .main-imagen {
   width: 50%;
@@ -341,14 +321,11 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
   padding: 5px;
   margin-left: 30px;
 }
-.main-principal .main-section > h1 {
-  font-size: 3rem;
-}
 .main-principal .main-section h3 {
   font-size: 2rem;
 }
 .main-principal .main-section ul li {
-  margin-left: 30px;
+  margin-left: 20px;
   list-style-type: disc;
 }
 .main-principal .intro-items {
@@ -372,6 +349,10 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
   .main-principal .main-section h3 {
     font-size: 1.1rem;
     font-weight: bold;
+  }
+  .main-principal .main-section ul li {
+    margin-left: 3px;
+    list-style-type: disc;
   }
   .suscripcion {
     width: 10%;

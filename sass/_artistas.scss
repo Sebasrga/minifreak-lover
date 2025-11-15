@@ -4,19 +4,7 @@
 
 main {
 
-    .titulo-seccion {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 90px 0 0 0;
-        background-color: v.$background-color-pri;
-        font-size: 60%;
-
-        :hover {
-            background-color: v.$fuente-color-ter;
-        }
-    }
+    //titulo seccion
 
     .artistas {
         display: flex;
@@ -52,16 +40,24 @@ main {
 
     main {
 
+       
+
 
         .artistas {
 
             flex-direction: column;
 
-            padding: 30px 30px 60px 30px;
+            padding: 5px 30px 60px 30px;
 
             .artiatas__item {
 
                 flex-direction: column;
+
+
+                // .artista__videito {
+                //     width: 365px;
+                //     height: 300px;
+                // }
             }
 
 

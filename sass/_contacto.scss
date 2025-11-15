@@ -3,19 +3,7 @@
 
 main {
 
-    .titulo-seccion {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        padding: 90px 0 0 0;
-        background-color: v.$background-color-pri;
-        font-size: 60%;
-
-        :hover {
-            background-color: v.$fuente-color-ter;
-        }
-    }
+    
 
     .contacto-contenedor {
         width: 100%;
