@@ -55,6 +55,15 @@ main .artistas .artiatas__item .artista__videito {
   height: 300px;
 }
 
+@media screen and (max-width: 480px) {
+  main .artistas {
+    flex-direction: column;
+    padding: 30px 30px 60px 30px;
+  }
+  main .artistas .artiatas__item {
+    flex-direction: column;
+  }
+}
 main .titulo-seccion {
   display: flex;
   width: 100%;
@@ -148,7 +157,9 @@ main .titulo-seccion {
   justify-content: center;
   padding: 90px 0 0 0;
   background-color: #ececec;
-  font-size: 60%;
+}
+main .titulo-seccion > h1 {
+  font-size: 40px;
 }
 main .titulo-seccion :hover {
   background-color: #FFE5B4;
@@ -170,7 +181,7 @@ main .features-contenedor .caja.matriz {
 main .features-contenedor .matriz-imagen {
   grid-column: 2/3;
   grid-row: 1/2;
-  width: 70%;
+  width: 90%;
 }
 main .features-contenedor .caja.filtro {
   grid-column: 2/3;
@@ -179,6 +190,7 @@ main .features-contenedor .caja.filtro {
 main .features-contenedor .filtro-imagen {
   grid-column: 1/2;
   grid-row: 2/3;
+  width: 90%;
 }
 main .features-contenedor .caja.envolvente {
   grid-column: 1/2;
@@ -187,7 +199,7 @@ main .features-contenedor .caja.envolvente {
 main .features-contenedor .envolvente-imagen {
   grid-column: 2/3;
   grid-row: 3/4;
-  width: 65%;
+  width: 90%;
 }
 main .features-contenedor .caja.osciladores {
   grid-column: 2/3;
@@ -196,7 +208,58 @@ main .features-contenedor .caja.osciladores {
 main .features-contenedor .osciladores-imagen {
   grid-column: 1/2;
   grid-row: 4/5;
-  width: 70%;
+  width: 90%;
+}
+@media screen and (max-width: 480px) {
+  main .titulo-seccion > h1 {
+    font-size: 20px;
+  }
+  main .features-contenedor {
+    width: 100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    place-items: center;
+    row-gap: 5px;
+    padding: 10px;
+    font-size: 80%;
+  }
+  main .features-contenedor .matriz-imagen {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 90%;
+  }
+  main .features-contenedor .caja.matriz {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  main .features-contenedor .filtro-imagen {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 90%;
+  }
+  main .features-contenedor .caja.filtro {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  main .features-contenedor .envolvente-imagen {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 90%;
+  }
+  main .features-contenedor .caja.envolvente {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  main .features-contenedor .osciladores-imagen {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    width: 90%;
+  }
+  main .features-contenedor .caja.osciladores {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
 }
 
 .pie-de-pagina {
@@ -210,10 +273,28 @@ main .features-contenedor .osciladores-imagen {
   font-size: 16px;
 }
 
+@media screen and (max-width: 480px) {
+  .pie-de-pagina {
+    display: flex;
+    font-size: 5%;
+    background-color: #FFA500;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1px;
+  }
+  .pie-de-pagina h4 {
+    font-size: 10px;
+  }
+}
 header .header__logo {
-  width: 137px;
+  width: 140px;
 }
 
+@media screen and (max-width: 480px) {
+  header .header__logo {
+    width: 100px;
+  }
+}
 main .titulo-seccion {
   display: flex;
   width: 100%;
@@ -260,6 +341,12 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
   padding: 5px;
   margin-left: 30px;
 }
+.main-principal .main-section > h1 {
+  font-size: 3rem;
+}
+.main-principal .main-section h3 {
+  font-size: 2rem;
+}
 .main-principal .main-section ul li {
   margin-left: 30px;
   list-style-type: disc;
@@ -273,6 +360,22 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
   bottom: 10px;
   right: 10px;
   width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .main-principal .imagen-minifreak .main-imagen {
+    width: 70%;
+  }
+  .main-principal .main-section h1 {
+    font-size: 2rem;
+  }
+  .main-principal .main-section h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .suscripcion {
+    width: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

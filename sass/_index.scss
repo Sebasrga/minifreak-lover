@@ -18,6 +18,14 @@
         padding: 5px;
         margin-left: 30px;
 
+        > h1{
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
         ul li {
             margin-left: 30px;
             list-style-type:disc;
@@ -36,4 +44,44 @@
     bottom: 10px;
     right: 10px;
     width: 50px;
+}
+
+
+@media screen and (max-width: 480px){
+
+
+    .main-principal{
+
+            .imagen-minifreak{
+
+                .main-imagen{
+
+                    width: 70%;
+                }
+
+
+            }
+        
+
+
+        .main-section{
+
+            h1{
+                font-size: 2rem;
+            }
+
+            h3{
+                font-size: 1.1rem;
+                font-weight: bold;
+                
+            }
+        }
+    }
+
+    .suscripcion {
+
+        width: 10%;
+    }
+
+
 }

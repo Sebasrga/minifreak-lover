@@ -4,6 +4,19 @@ header {
     // BOOTSTRAP
 
     .header__logo {
-        width: 137px;
+        width: 140px;
     }
+}
+
+@media screen and (max-width: 480px) {
+
+header {
+    // BOOTSTRAP
+
+    .header__logo {
+        width: 100px;
+    }
+}
+
+
 }
