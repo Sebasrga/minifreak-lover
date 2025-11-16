@@ -162,6 +162,8 @@ main .mensaje-contacto .mensaje_3 {
   }
   main .contacto-contenedor .contacto-info {
     grid-area: info;
+    justify-items: end;
+    justify-content: end;
   }
   main .contacto-contenedor .contacto-opinion {
     grid-area: opinion;
@@ -331,6 +333,8 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
 @media screen and (max-width: 480px) {
   main .nuevos-sintes {
     flex-direction: column;
+    padding: 10px;
+    gap: 5px;
   }
 }
 .main-principal {

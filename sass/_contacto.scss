@@ -90,6 +90,8 @@ main {
 
             .contacto__opinion {
                 grid-area: contacto__opinion;
+
+                
             }
 
             .btnop {
@@ -143,10 +145,13 @@ main {
 
             .contacto-info {
                 grid-area: info;
+                justify-items: end;
+                justify-content: end;
             }
 
             .contacto-opinion {
                 grid-area: opinion;
+                
             }
 
 
