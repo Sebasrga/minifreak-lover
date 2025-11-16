@@ -2,10 +2,16 @@
 
 .pie-de-pagina {
     display: flex;
-    background-color: v.$background-color-sec;
+    // background-color: v.$background-color-sec;
+
+background: #FFA500;
+background: linear-gradient(0deg,rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 1) 91%, rgba(236, 236, 236, 1) 99%);
+
+
+
     align-items: center;
     justify-content: space-around;
-    padding: 3px;
+    padding: 10px 0 0 5px;
 
     h4 {
         font-size: 16px;
@@ -18,6 +24,11 @@
         display: flex;
         font-size: 5%;
         background-color: #FFA500;
+
+
+
+
+
         align-items: center;
         justify-content: space-around;
         padding: 1px;

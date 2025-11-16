@@ -6,29 +6,55 @@ main {
         width: 100%;
         align-items: center;
         justify-content: center;
-        margin-top: 90px;
-        background-color: v.$background-color-pri;
+        margin-top: 85px;
+
+       
+
+        background: #ECECEC;
+        background: linear-gradient(0deg, rgba(236, 236, 236, 1) 1%, rgba(255, 165, 0, 1) 50%, rgba(255, 165, 0, 1) 54%, rgba(248, 249, 250, 1) 99%);
+
+
+
 
         >h1 {
             font-size: 3rem;
         }
 
         :hover {
-            background-color: v.$fuente-color-ter;
+            
+            animation: balanceo 2s infinite;
         }
     }
 }
 
-@media screen and (max-width: 480px){
-main {
-    .titulo-seccion {
-       
-margin-top: 70px;
+@keyframes balanceo {
 
-        >h1 {
-            font-size: 1.2rem;
-            font-weight: bolder;
-         }
+    0% {
+        transform: translateX(0);
     }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }
+
+
+
+@media screen and (max-width: 480px) {
+    main {
+        .titulo-seccion {
+
+            margin-top: 70px;
+
+            >h1 {
+                font-size: 1.2rem;
+                font-weight: bolder;
+            }
+        }
+    }
 }

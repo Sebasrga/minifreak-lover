@@ -4,9 +4,10 @@
 $fuente-pri: Sansation;
 $background-color-pri: #ececec;
 $background-color-sec: #FFA500;
+$background-color-ter: #Cc5500;
 $fuente-color-pri: black;
 $fuente-color-sec: #8B4500;
-$fuente-color-ter: #FFE5B4; //HOVER
+$fuente-color-ter: #Cc5500;
 
 *{
 font-family: $fuente-pri;
@@ -17,12 +18,12 @@ box-sizing: border-box;
 
 }
 
-.titulo-seleccion{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 90px 0 0 0;
-    background-color: $background-color-pri;
-    font-size: 60%;
-}
+// .titulo-seleccion{
+//     display: flex;
+//     width: 100%;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 90px 0 0 0;
+//     background-color: red;
+//     font-size: 60%;
+// }

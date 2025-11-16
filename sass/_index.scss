@@ -11,20 +11,32 @@
         .main-imagen {
             width: 50%;
         }
+
+        :hover {
+            animation: agrandar 1.5s;
+        }
     }
+
+@keyframes agrandar {
+
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+
+}
 
     .main-section {
         width: 80%;
         padding: 5px;
         margin-left: 30px;
 
-        h3{
+        h3 {
             font-size: 2rem;
         }
 
         ul li {
             margin-left: 20px;
-            list-style-type:disc;
+            list-style-type: disc;
         }
     }
 
@@ -36,40 +48,48 @@
 
 .suscripcion {
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     right: 10px;
     width: 50px;
+
+
 }
 
-@media screen and (max-width: 480px){
 
-    .main-principal{
 
-            .imagen-minifreak{
 
-                .main-imagen{
-                    width: 70%;
-                }
+
+
+@media screen and (max-width: 480px) {
+
+    .main-principal {
+
+        .imagen-minifreak {
+
+            .main-imagen {
+                width: 70%;
             }
-        
-        .main-section{
+        }
 
-            h1{
+        .main-section {
+
+            h1 {
                 font-size: 2rem;
             }
 
-            h3{
+            h3 {
                 font-size: 1.1rem;
                 font-weight: bold;
-                
+
             }
 
             ul li {
-            margin-left: 3px;
-            list-style-type:disc;
-        }
+                margin-left: 3px;
+                list-style-type: disc;
+            }
         }
     }
+
     .suscripcion {
 
         width: 10%;

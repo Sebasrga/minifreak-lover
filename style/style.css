@@ -8,31 +8,33 @@
   box-sizing: border-box;
 }
 
-.titulo-seleccion {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 90px 0 0 0;
-  background-color: #ececec;
-  font-size: 60%;
-}
-
 main .titulo-seccion {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 90px;
-  background-color: #ececec;
+  margin-top: 85px;
+  background: #ECECEC;
+  background: linear-gradient(0deg, rgb(236, 236, 236) 1%, rgb(255, 165, 0) 50%, rgb(255, 165, 0) 54%, rgb(248, 249, 250) 99%);
 }
 main .titulo-seccion > h1 {
   font-size: 3rem;
 }
 main .titulo-seccion :hover {
-  background-color: #FFE5B4;
+  animation: balanceo 2s infinite;
 }
 
+@keyframes balanceo {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media screen and (max-width: 480px) {
   main .titulo-seccion {
     margin-top: 70px;
@@ -93,7 +95,7 @@ main .contacto-contenedor .contacto-info {
   width: 100;
   height: 400px;
   display: grid;
-  border: 2px solid whitesmoke;
+  border: 2px solid #f5f5f5;
   border-radius: 10px;
   padding: 10px;
   place-items: center;
@@ -138,6 +140,10 @@ main .contacto-contenedor .contacto-opinion .btnop {
 main .contacto-contenedor .contacto-opinion .btnop__flex {
   display: flex;
   gap: 10px;
+}
+main .contacto-contenedor .contacto-opinion .btnop__flex .botoncito {
+  background-color: #f3c165;
+  color: blue;
 }
 main .mensaje-contacto {
   display: flex;
@@ -281,10 +287,11 @@ main .features-contenedor .osciladores-imagen {
 
 .pie-de-pagina {
   display: flex;
-  background-color: #FFA500;
+  background: #FFA500;
+  background: linear-gradient(0deg, rgb(255, 165, 0) 0%, rgb(255, 165, 0) 91%, rgb(236, 236, 236) 99%);
   align-items: center;
   justify-content: space-around;
-  padding: 3px;
+  padding: 10px 0 0 5px;
 }
 .pie-de-pagina h4 {
   font-size: 16px;
@@ -348,6 +355,20 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
 .main-principal .imagen-minifreak .main-imagen {
   width: 50%;
 }
+.main-principal .imagen-minifreak :hover {
+  animation: agrandar 1.5s;
+}
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .main-principal .main-section {
   width: 80%;
   padding: 5px;
@@ -366,7 +387,7 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
 
 .suscripcion {
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   right: 10px;
   width: 50px;
 }

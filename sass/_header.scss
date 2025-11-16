@@ -10,13 +10,11 @@ header {
 
 @media screen and (max-width: 480px) {
 
-header {
-    // BOOTSTRAP
+    header {
+        // BOOTSTRAP
 
-    .header__logo {
-        width: 100px;
+        .header__logo {
+            width: 100px;
+        }
     }
-}
-
-
 }
