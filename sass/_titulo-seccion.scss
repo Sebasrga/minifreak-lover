@@ -7,21 +7,14 @@ main {
         align-items: center;
         justify-content: center;
         margin-top: 85px;
-
-       
-
         background: #ECECEC;
         background: linear-gradient(0deg, rgba(236, 236, 236, 1) 1%, rgba(255, 165, 0, 1) 50%, rgba(255, 165, 0, 1) 54%, rgba(248, 249, 250, 1) 99%);
-
-
-
 
         >h1 {
             font-size: 3rem;
         }
 
         :hover {
-            
             animation: balanceo 2s infinite;
         }
     }
@@ -40,15 +33,11 @@ main {
     100% {
         transform: translateX(0);
     }
-
 }
-
-
 
 @media screen and (max-width: 480px) {
     main {
         .titulo-seccion {
-
             margin-top: 70px;
 
             >h1 {

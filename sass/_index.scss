@@ -17,13 +17,20 @@
         }
     }
 
-@keyframes agrandar {
+    @keyframes agrandar {
 
-    0%{transform: scale(1);}
-    50%{transform: scale(1.1);}
-    100%{transform: scale(1);}
+        0% {
+            transform: scale(1);
+        }
 
-}
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
 
     .main-section {
         width: 80%;
@@ -43,7 +50,6 @@
     .intro-items {
         padding: 10px;
     }
-
 }
 
 .suscripcion {
@@ -52,20 +58,18 @@
     right: 10px;
     width: 50px;
 
+    
+    animation: balanceo 2s infinite ease;
+    
+
+
 
 }
-
-
-
-
-
 
 @media screen and (max-width: 480px) {
 
     .main-principal {
-
         .imagen-minifreak {
-
             .main-imagen {
                 width: 70%;
             }
@@ -80,7 +84,6 @@
             h3 {
                 font-size: 1.1rem;
                 font-weight: bold;
-
             }
 
             ul li {
@@ -91,7 +94,25 @@
     }
 
     .suscripcion {
-
         width: 10%;
+    }
+}
+
+// Animacion a suscripcion
+@keyframes balanceo {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }

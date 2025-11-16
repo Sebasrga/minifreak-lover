@@ -8,7 +8,7 @@ main {
         gap: 10px;
 
         .sinte-item {
-            background-color: #ececec;
+            background-color: v.$background-color-pri;
             border-radius: 10px;
             overflow: hidden;
             display: flex;
@@ -23,21 +23,12 @@ main {
     }
 }
 
-@media screen and (max-width: 480px){
-
-main{
-
-.nuevos-sintes{
-    flex-direction: column;
-
-    padding: 10px;
-    gap: 5px;
-    
-}
-
-}
-
-
-
-
+@media screen and (max-width: 480px) {
+    main {
+        .nuevos-sintes {
+            flex-direction: column;
+            padding: 10px;
+            gap: 5px;
+        }
+    }
 }

@@ -2,8 +2,6 @@
 
 main {
 
-    
-
     .features-contenedor {
         width: 100;
         display: grid;
@@ -59,10 +57,7 @@ main {
         }
     }
 
-
     @media screen and (max-width: 480px) {
-
-    
 
         .features-contenedor {
             grid-template-columns: 1fr;
@@ -70,8 +65,8 @@ main {
             place-items: center;
             row-gap: 5px;
             padding: 10px;
-            
-             h4{
+
+            h4 {
                 font-size: 1.2rem;
                 font-weight: bold;
             }
@@ -121,14 +116,6 @@ main {
                 grid-column: 1/2;
                 grid-row: 8/9;
             }
-
-
-
-
-
-
         }
-
-
     }
 }
