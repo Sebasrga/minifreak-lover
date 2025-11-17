@@ -176,13 +176,18 @@ main .mensaje-contacto .mensaje_3 {
   }
   main .mensaje_1 {
     font-size: 1.2rem;
+    margin-left: 4px;
+    text-align: center;
   }
   main .mensaje_2 {
     font-size: 1.2rem;
+    margin-left: 4px;
+    text-align: center;
   }
   main .mensaje_3 {
     font-size: 1rem;
-    margin-left: 8px;
+    margin-left: 4px;
+    text-align: center;
   }
 }
 
