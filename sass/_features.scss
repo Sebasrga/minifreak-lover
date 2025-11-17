@@ -11,6 +11,7 @@ main {
         row-gap: 10px;
         padding: 40px;
         background-color: v.$background-color-pri;
+        text-align: justify;
 
         .caja.matriz {
             grid-column: 1/2;

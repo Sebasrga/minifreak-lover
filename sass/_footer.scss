@@ -19,15 +19,8 @@
 @media screen and (max-width: 480px) {
 
     .pie-de-pagina {
-
-        display: flex;
         font-size: 5%;
-        background: #FFA500;
-        background: linear-gradient(0deg, rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 1) 91%, rgba(236, 236, 236, 1) 99%);
-
-        align-items: center;
-        justify-content: space-around;
-        padding: 1px;
+        padding: 5px 1px 1px 1px;
 
         h4 {
             font-size: 10px;
