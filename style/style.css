@@ -187,13 +187,13 @@ main .mensaje-contacto .mensaje_3 {
 }
 
 main .features-contenedor {
-  width: 100;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   place-items: center;
   row-gap: 10px;
-  padding: 20px;
+  padding: 40px;
   background-color: #ececec;
 }
 main .features-contenedor .caja.matriz {
@@ -238,7 +238,7 @@ main .features-contenedor .osciladores-imagen {
     grid-template-rows: repeat(8, auto);
     place-items: center;
     row-gap: 5px;
-    padding: 10px;
+    padding: 20px;
   }
   main .features-contenedor h4 {
     font-size: 1.2rem;
@@ -373,7 +373,7 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
 .main-principal .main-section {
   width: 80%;
   padding: 5px;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 .main-principal .main-section h3 {
   font-size: 2rem;
@@ -397,6 +397,9 @@ main .nuevos-sintes .sinte-item .sinte__imagen {
 @media screen and (max-width: 480px) {
   .main-principal .imagen-minifreak .main-imagen {
     width: 70%;
+  }
+  .main-principal .main-section {
+    margin-left: 5px;
   }
   .main-principal .main-section h1 {
     font-size: 2rem;

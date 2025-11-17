@@ -3,13 +3,13 @@
 main {
 
     .features-contenedor {
-        width: 100;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         place-items: center;
         row-gap: 10px;
-        padding: 20px;
+        padding: 40px;
         background-color: v.$background-color-pri;
 
         .caja.matriz {
@@ -64,7 +64,7 @@ main {
             grid-template-rows: repeat(8, auto);
             place-items: center;
             row-gap: 5px;
-            padding: 10px;
+            padding: 20px;
 
             h4 {
                 font-size: 1.2rem;

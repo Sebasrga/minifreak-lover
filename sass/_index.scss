@@ -3,6 +3,8 @@
 .main-principal {
     background-color: v.$background-color-pri;
 
+
+
     .imagen-minifreak {
         display: flex;
         justify-content: center;
@@ -35,7 +37,7 @@
     .main-section {
         width: 80%;
         padding: 5px;
-        margin-left: 30px;
+        margin-left: 25px;
 
         h3 {
             font-size: 2rem;
@@ -58,9 +60,9 @@
     right: 10px;
     width: 50px;
 
-    
+
     animation: balanceo 2s infinite ease;
-    
+
 
 
 
@@ -76,6 +78,8 @@
         }
 
         .main-section {
+
+            margin-left: 5px;
 
             h1 {
                 font-size: 2rem;
