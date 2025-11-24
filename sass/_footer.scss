@@ -11,6 +11,16 @@
     justify-content: space-around;
     padding: 10px 0 0 5px;
 
+    h2 {
+        color: v.$fuente-color-sec;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        color: v.$fuente-color-ter;
+        font-size: 1.2rem;
+    }
+
     h4 {
         font-size: 16px;
     }
