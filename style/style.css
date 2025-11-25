@@ -316,6 +316,12 @@ main .features-contenedor .osciladores-imagen {
     font-size: 5%;
     padding: 5px 1px 1px 1px;
   }
+  .pie-de-pagina h2 {
+    font-size: 0.5rem;
+  }
+  .pie-de-pagina h3 {
+    font-size: 0.5rem;
+  }
   .pie-de-pagina h4 {
     font-size: 10px;
   }
