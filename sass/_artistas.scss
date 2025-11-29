@@ -2,10 +2,8 @@
 
 main {
     .artistas {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 60px 60px 60px;
-        gap: 10px;
+
+        @include v.flx-bx(column, 30px 60px 60px 60px, 10px, center);
         background-color: v.$background-color-pri;
 
         .artiatas__item {
@@ -15,11 +13,18 @@ main {
             display: flex;
 
             .artista-info {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                gap: 5px;
-                justify-content: center;
+
+                @include v.flx-bx(column, 10px, 5px, center);
+
+                .artista__texto {
+                    text-align: justify;
+                }
+
+                //display: flex;
+                //flex-direction: column;
+                //padding: 10px;
+                //gap: 5px;
+                //justify-content: center;
             }
 
             .artista__videito {
@@ -33,7 +38,7 @@ main {
 @media screen and (max-width: 480px) {
     main {
         .artistas {
-            flex-direction: column;
+            //flex-direction: column;
             padding: 5px 30px 60px 30px;
 
             .artiatas__item {

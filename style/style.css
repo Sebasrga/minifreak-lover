@@ -49,6 +49,7 @@ main .artistas {
   flex-direction: column;
   padding: 30px 60px 60px 60px;
   gap: 10px;
+  justify-content: center;
   background-color: #ececec;
 }
 main .artistas .artiatas__item {
@@ -64,6 +65,9 @@ main .artistas .artiatas__item .artista-info {
   gap: 5px;
   justify-content: center;
 }
+main .artistas .artiatas__item .artista-info .artista__texto {
+  text-align: justify;
+}
 main .artistas .artiatas__item .artista__videito {
   width: 400px;
   height: 300px;
@@ -71,7 +75,6 @@ main .artistas .artiatas__item .artista__videito {
 
 @media screen and (max-width: 480px) {
   main .artistas {
-    flex-direction: column;
     padding: 5px 30px 60px 30px;
   }
   main .artistas .artiatas__item {
@@ -293,11 +296,13 @@ main .features-contenedor .osciladores-imagen {
 
 .pie-de-pagina {
   display: flex;
+  flex-direction: row;
+  padding: 10px 0 0 5px;
+  gap: 0px;
+  justify-content: space-around;
+  align-items: center;
   background: #FFA500;
   background: linear-gradient(0deg, rgb(255, 165, 0) 0%, rgb(255, 165, 0) 91%, rgb(236, 236, 236) 99%);
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px 0 0 5px;
 }
 .pie-de-pagina h2 {
   color: #8B4500;
@@ -337,17 +342,20 @@ header .header__logo {
 }
 main .nuevos-sintes {
   display: flex;
+  flex-direction: row;
   padding: 30px;
   gap: 10px;
+  justify-content: flex-start;
 }
 main .nuevos-sintes .sinte-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  justify-content: flex-start;
   background-color: #ececec;
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
 }
 main .nuevos-sintes .sinte-item .sinte__imagen {
   max-width: 100%;
@@ -358,9 +366,11 @@ main .nuevos-sintes .sinte-item p {
 
 @media screen and (max-width: 480px) {
   main .nuevos-sintes {
+    display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 5px;
+    justify-content: flex-start;
   }
 }
 .main-principal {
@@ -368,8 +378,10 @@ main .nuevos-sintes .sinte-item p {
 }
 .main-principal .imagen-minifreak {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   padding: 5px 0 0 0;
+  gap: 0px;
+  justify-content: center;
 }
 .main-principal .imagen-minifreak .main-imagen {
   width: 50%;

@@ -6,9 +6,11 @@
 
 
     .imagen-minifreak {
-        display: flex;
-        justify-content: center;
-        padding: 5px 0 0 0;
+        @include v.flx-bx(row, 5px 0 0 0, 0px, center);
+
+        //display: flex;
+        //justify-content: center;
+        //padding: 5px 0 0 0;
 
         .main-imagen {
             width: 50%;

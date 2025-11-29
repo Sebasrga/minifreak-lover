@@ -11,11 +11,19 @@ $fuente-color-ter: #Cc5500;
 $fuente-color-cua: #FFA500;
 $borde-color-pri: #f5f5f5;
 
-*{
-font-family: $fuente-pri;
-color: $fuente-color-pri;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    font-family: $fuente-pri;
+    color: $fuente-color-pri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
+
+@mixin flx-bx($direction, $padd, $gap, $just-cont) {
+    display: flex;
+    flex-direction: $direction;
+    padding: $padd;
+    gap: $gap;
+    justify-content: $just-cont;
 }

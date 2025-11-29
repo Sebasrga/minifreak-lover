@@ -3,18 +3,22 @@
 main {
 
     .nuevos-sintes {
-        display: flex;
-        padding: 30px;
-        gap: 10px;
+
+        @include v.flx-bx(row, 30px, 10px, flex-start);
+        //display: flex;
+        //padding: 30px;
+        //gap: 10px;
 
         .sinte-item {
+
+            @include v.flx-bx(column, 10px, 10px, flex-start);
             background-color: v.$background-color-pri;
             border-radius: 10px;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            padding: 10px;
+            //display: flex;
+            //flex-direction: column;
+            //gap: 10px;
+            //padding: 10px;
 
             .sinte__imagen {
                 max-width: 100%;
@@ -30,9 +34,10 @@ main {
 @media screen and (max-width: 480px) {
     main {
         .nuevos-sintes {
-            flex-direction: column;
-            padding: 10px;
-            gap: 5px;
+            @include v.flx-bx(column, 10px, 5px, flex-start);
+            //flex-direction: column;
+            //padding: 10px;
+            //gap: 5px;
         }
     }
 }
