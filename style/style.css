@@ -8,6 +8,26 @@
   box-sizing: border-box;
 }
 
+main .artistas .maxime, main .artistas .victor, main .artistas .yuli, main .artistas .redmeans, main .artistas .xliks {
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+}
+main .artistas .maxime .artista-info, main .artistas .victor .artista-info, main .artistas .yuli .artista-info, main .artistas .redmeans .artista-info, main .artistas .xliks .artista-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  justify-content: center;
+}
+main .artistas .maxime .artista-info .artista__texto, main .artistas .victor .artista-info .artista__texto, main .artistas .yuli .artista-info .artista__texto, main .artistas .redmeans .artista-info .artista__texto, main .artistas .xliks .artista-info .artista__texto {
+  text-align: justify;
+}
+main .artistas .maxime .artista__videito, main .artistas .victor .artista__videito, main .artistas .yuli .artista__videito, main .artistas .redmeans .artista__videito, main .artistas .xliks .artista__videito {
+  width: 400px;
+  height: 300px;
+}
+
 main .titulo-seccion {
   display: flex;
   width: 100%;
@@ -52,25 +72,20 @@ main .artistas {
   justify-content: center;
   background-color: #ececec;
 }
-main .artistas .artiatas__item {
+main .artistas .maxime {
+  background-color: #ad5701;
+}
+main .artistas .victor {
   background-color: #Cc5500;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
 }
-main .artistas .artiatas__item .artista-info {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
-  justify-content: center;
+main .artistas .yuli {
+  background-color: #c96400;
 }
-main .artistas .artiatas__item .artista-info .artista__texto {
-  text-align: justify;
+main .artistas .redmeans {
+  background-color: #e07000;
 }
-main .artistas .artiatas__item .artista__videito {
-  width: 400px;
-  height: 300px;
+main .artistas .xliks {
+  background-color: #ff8000;
 }
 
 @media screen and (max-width: 480px) {
@@ -315,8 +330,7 @@ main .features-contenedor .osciladores-imagen {
 .pie-de-pagina h4 {
   font-size: 16px;
 }
-
-@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 430px) {
   .pie-de-pagina {
     font-size: 5%;
     padding: 5px 1px 1px 1px;
@@ -331,15 +345,16 @@ main .features-contenedor .osciladores-imagen {
     font-size: 10px;
   }
 }
+
 header .header__logo {
   width: 140px;
 }
-
-@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 430px) {
   header .header__logo {
     width: 100px;
   }
 }
+
 main .nuevos-sintes {
   display: flex;
   flex-direction: row;
@@ -430,7 +445,7 @@ main .nuevos-sintes .sinte-item p {
 
 @media screen and (max-width: 480px) {
   .main-principal .imagen-minifreak .main-imagen {
-    width: 70%;
+    width: 95%;
   }
   .main-principal .main-section {
     margin-left: 5px;

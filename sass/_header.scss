@@ -6,15 +6,21 @@ header {
     .header__logo {
         width: 140px;
     }
-}
 
-@media screen and (max-width: 480px) {
 
-    header {
+
+    @include v.celu {
+
         // BOOTSTRAP
-
         .header__logo {
             width: 100px;
         }
     }
 }
+
+
+// @media screen and (max-width: 480px) {
+//     .header__logo {
+//         width: 100px;
+//     }
+// }

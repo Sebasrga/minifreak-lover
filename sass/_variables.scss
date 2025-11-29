@@ -5,6 +5,15 @@ $fuente-pri: Sansation;
 $background-color-pri: #ececec;
 $background-color-sec: #FFA500;
 $background-color-ter: #Cc5500;
+
+
+$background-color-cua: #ff8000;
+$background-color-qui: #e07000;
+$background-color-sep: #c96400;
+$background-color-set: #ad5701;
+$background-color-oct: #8B4500;
+
+
 $fuente-color-pri: black;
 $fuente-color-sec: #8B4500;
 $fuente-color-ter: #Cc5500;
@@ -26,4 +35,32 @@ $borde-color-pri: #f5f5f5;
     padding: $padd;
     gap: $gap;
     justify-content: $just-cont;
+}
+
+
+%artist-card {
+    //background-color: $background-color-ter;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+
+    .artista-info {
+        @include flx-bx(column, 10px, 5px, center);
+
+        .artista__texto {
+            text-align: justify;
+            
+        }
+    }
+
+    .artista__videito {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@mixin celu {
+    @media (min-width: 320px) and (max-width: 430px) {
+        @content;
+    }
 }

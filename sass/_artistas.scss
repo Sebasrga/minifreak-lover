@@ -6,34 +6,57 @@ main {
         @include v.flx-bx(column, 30px 60px 60px 60px, 10px, center);
         background-color: v.$background-color-pri;
 
-        .artiatas__item {
+        .maxime {
+            @extend %artist-card;
+            background-color: v.$background-color-set;
+        }
+        .victor{
+            @extend %artist-card;
             background-color: v.$background-color-ter;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
+        }
+        .yuli{
+            @extend %artist-card;
+            background-color: v.$background-color-sep;
+        }
+        .redmeans{
+            @extend %artist-card;
+            background-color: v.$background-color-qui;
+        }
+        .xliks{
+            @extend %artist-card;
+            background-color: v.$background-color-cua;
+        }
+    }
+}
 
-            .artista-info {
 
-                @include v.flx-bx(column, 10px, 5px, center);
 
-                .artista__texto {
-                    text-align: justify;
-                }
+            //@extend %artista-card;
+            //  background-color: v.$background-color-ter;
+            // border-radius: 8px;
+            // overflow: hidden;
+            // display: flex;
+
+            //.artista-info {
+
+                //@include v.flx-bx(column, 10px, 5px, center);
+
+            //    .artista__texto {
+                    //text-align: justify;
+            //    }
 
                 //display: flex;
                 //flex-direction: column;
                 //padding: 10px;
                 //gap: 5px;
                 //justify-content: center;
-            }
+           // }
 
-            .artista__videito {
-                width: 400px;
-                height: 300px;
-            }
-        }
-    }
-}
+           // .artista__videito {
+                //width: 400px;
+                //height: 300px;
+            //}
+
 
 @media screen and (max-width: 480px) {
     main {
