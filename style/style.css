@@ -193,6 +193,14 @@ main .mensaje-contacto .mensaje_2 {
 main .mensaje-contacto .mensaje_3 {
   color: #FFA500;
 }
+main .donde {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 320px) and (max-width: 430px) {
   main .contacto-contenedor {
     height: auto;
@@ -331,11 +339,11 @@ main .features-contenedor .osciladores-imagen {
 }
 @media (min-width: 431px) and (max-width: 968px) {
   main .features-contenedor {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(8, auto);
     place-items: center;
-    row-gap: 5px;
-    padding: 20px;
+    column-gap: 30px;
+    align-items: start;
   }
   main .features-contenedor h4 {
     font-size: 1.2rem;
@@ -354,31 +362,31 @@ main .features-contenedor .osciladores-imagen {
     grid-row: 2/3;
   }
   main .features-contenedor .filtro-imagen {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 90%;
+  }
+  main .features-contenedor .caja.filtro {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  main .features-contenedor .envolvente-imagen {
     grid-column: 1/2;
     grid-row: 3/4;
     width: 90%;
   }
-  main .features-contenedor .caja.filtro {
+  main .features-contenedor .caja.envolvente {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-  main .features-contenedor .envolvente-imagen {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    width: 90%;
-  }
-  main .features-contenedor .caja.envolvente {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
   main .features-contenedor .osciladores-imagen {
-    grid-column: 1/2;
-    grid-row: 7/8;
-    width: 90%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
   }
   main .features-contenedor .caja.osciladores {
-    grid-column: 1/2;
-    grid-row: 8/9;
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 }
 

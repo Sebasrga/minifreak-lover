@@ -107,6 +107,11 @@ main {
         }
     }
 
+    .donde {
+        @include v.flx-bx(column, 5px, 5px, center);
+        align-items: center;
+    }
+
     //@media screen and (max-width: 480px) {
 
     @include v.celu {
@@ -131,27 +136,29 @@ main {
             }
         }
 
-        .mensaje-contacto{
-        .mensaje_1 {
-            font-size: 1.2rem;
-            margin-left: 4px;
-            text-align: center;
-            
+        .mensaje-contacto {
+            .mensaje_1 {
+                font-size: 1.2rem;
+                margin-left: 4px;
+                text-align: center;
+
+            }
+
+            .mensaje_2 {
+                font-size: 1.2rem;
+                margin-left: 4px;
+                text-align: center;
+            }
+
+            .mensaje_3 {
+                font-size: 1rem;
+                margin-left: 4px;
+                text-align: center;
+            }
         }
 
-        .mensaje_2 {
-            font-size: 1.2rem;
-            margin-left: 4px;
-            text-align: center;
-        }
+        
 
-        .mensaje_3 {
-            font-size: 1rem;
-            margin-left: 4px;
-            text-align: center;
-
-        }
-    }
     }
 
     @include v.tab {
