@@ -6,10 +6,6 @@
     .imagen-minifreak {
         @include v.flx-bx(row, 5px 0 0 0, 0px, center);
 
-        //display: flex;
-        //justify-content: center;
-        //padding: 5px 0 0 0;
-
         .main-imagen {
             width: 50%;
         }
@@ -61,15 +57,10 @@
 }
 
 .suscripcion {
-    //position: sticky;
-    // bottom: 30px;
-    //background-color: v.$background-color-pri;
-
     position: fixed;
     bottom: 15px;
     right: 10px;
     width: 50px;
-
     animation: balanceo 2s infinite ease;
 }
 

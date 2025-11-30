@@ -20,8 +20,6 @@ $fuente-color-ter: #Cc5500;
 $fuente-color-cua: #FFA500;
 $borde-color-pri: #f5f5f5;
 
-
-
 * {
     font-family: $fuente-pri;
     color: $fuente-color-pri;
@@ -40,7 +38,7 @@ $borde-color-pri: #f5f5f5;
 }
 
 %artist-card {
-    //background-color: $background-color-ter;
+    
     border-radius: 8px;
     overflow: hidden;
     display: flex;

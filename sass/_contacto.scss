@@ -107,11 +107,6 @@ main {
         }
     }
 
-    // .donde {
-    //     @include v.flx-bx(column, 5px, 5px, center);
-    //     align-items: center;
-    // }
-
     .slider {
         width: 90vw;
         height: auto;
@@ -142,7 +137,6 @@ main {
         gap: 40px;
 
         img {
-            //height: 90px;
             width: 200px;
         }
     }
@@ -158,58 +152,6 @@ main {
             transform: translateX(calc(-200px * 11));
         }
     }
-
-
-    //--------------------------------------MARQUESINA
-    //.logo-contenedor {
-    // @include v.flx-bx(column, 20px 0, 0, center);
-    // //width: 100%;
-    // overflow: hidden;
-    // align-items: center;
-    // animation: scroll 12s linear infinite;
-    // transition: 0.3s ease-in-out;
-    // height: 90px;
-    // width: auto;
-
-    // .logo-item {
-
-    //     display: flex;
-    //     gap: 80px;
-    //     animation: scroll 12s linear infinite;
-
-    //     height: 90px;
-    //     width: auto;
-    //     transition: 0.3s ease-in-out;
-
-    //     img {
-    //         height: 90px;
-    //     }
-
-    // }
-    //}
-
-
-
-    // @keyframes scroll {
-    //     from {
-    //         transform: translateX(0);
-    //     }
-
-    //     to {
-    //         transform: translateX(-100%);
-    //     }
-    // }
-
-
-
-
-
-
-
-
-
-
-
 
     @include v.celu {
         .contacto-contenedor {
@@ -253,9 +195,6 @@ main {
                 text-align: center;
             }
         }
-
-
-
     }
 
     @include v.tab {

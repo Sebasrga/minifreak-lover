@@ -58,8 +58,6 @@ main {
         }
     }
 
-
-
     @include v.celu {
 
         .features-contenedor {
@@ -122,21 +120,14 @@ main {
         }
     }
 
-
-
-
-
     @include v.tab {
 
         .features-contenedor {
             grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(8, auto);
             place-items: center;
-            //row-gap: 5px;
-            //padding: 20px;
             column-gap: 30px;
             align-items: start;
-            
 
             h4 {
                 font-size: 1.2rem;
@@ -189,12 +180,5 @@ main {
                 grid-row: 4/5;
             }
         }
-
-
-
-
     }
-
-
-
 }
