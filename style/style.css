@@ -487,10 +487,13 @@ main .nuevos-sintes .sinte-item {
 main .nuevos-sintes .sinte-item .sinte__imagen {
   max-width: 100%;
 }
+main .nuevos-sintes .sinte-item .sinte__nombre {
+  color: black;
+  text-shadow: 0 0 5px #FFA500;
+}
 main .nuevos-sintes .sinte-item p {
   text-align: justify;
 }
-
 @media (min-width: 320px) and (max-width: 430px) {
   main .nuevos-sintes {
     display: flex;
@@ -500,6 +503,16 @@ main .nuevos-sintes .sinte-item p {
     justify-content: flex-start;
   }
 }
+@media (min-width: 431px) and (max-width: 968px) {
+  main .nuevos-sintes {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 5px;
+    justify-content: flex-start;
+  }
+}
+
 .main-principal {
   background-color: #ececec;
 }

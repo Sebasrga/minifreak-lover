@@ -24,22 +24,48 @@ main {
                 max-width: 100%;
             }
 
+            .sinte__nombre {
+
+                color: v.$fuente-color-pri;
+                text-shadow: 0 0 5px v.$fuente-color-cua; //v.$fuente-color-ter;
+            }
+
             p {
                 text-align: justify;
             }
         }
     }
-}
 
 
 
-    @include v.celu{
-    main {
+
+    @include v.celu {
+
+        // main {
         .nuevos-sintes {
             @include v.flx-bx(column, 10px, 5px, flex-start);
             //flex-direction: column;
             //padding: 10px;
             //gap: 5px;
         }
+
+        // }
     }
+
+    @include v.tab {
+
+        .nuevos-sintes {
+            @include v.flx-bx(row, 10px, 5px, flex-start);
+
+
+            
+
+            
+            
+        }
+
+
+    }
+
+
 }
