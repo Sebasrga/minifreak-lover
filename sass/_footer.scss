@@ -13,7 +13,21 @@
     background: #FFA500;
     background: linear-gradient(0deg, rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 1) 91%, rgba(236, 236, 236, 1) 99%);
 
+    .redes {
 
+        @include v.flx-bx(row, 10px, 20px, center);
+        //display: flex;
+        //flex-direction: row;
+        align-content: space-between;
+
+        img {
+            width: 3vw;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
 
     h2 {
         color: v.$fuente-color-sec;
@@ -27,15 +41,17 @@
 
     h4 {
         font-size: 16px;
+        color: v.$fuente-color-sec;
     }
 
+    //--------------------Responsive CELU
     @include v.celu {
 
         font-size: 5%;
         padding: 5px 1px 1px 1px;
 
         h2 {
-            font-size: 0.5rem;
+            font-size: 0.7rem;
         }
 
         h3 {
@@ -43,9 +59,33 @@
         }
 
         h4 {
-            font-size: 10px;
+            font-size: 12px;
+        }
+
+        .redes {
+            img {
+                width: 6vw;
+            }
         }
     }
+
+    //--------------------Responsive TAB
+    @include v.tab {
+        .redes {
+            img {
+                width: 5vw;
+            }
+        }
+        h3 {
+            font-size: 15px;
+        }
+
+
+    }
+
+
+
+
 }
 
 // @media screen and (max-width: 480px) {

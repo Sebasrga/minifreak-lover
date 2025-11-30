@@ -16,8 +16,15 @@ header {
             width: 100px;
         }
     }
-}
 
+
+@include v.tab {
+
+    .header__logo {
+        width: 150px;
+    }
+}
+}
 
 // @media screen and (max-width: 480px) {
 //     .header__logo {

@@ -63,8 +63,14 @@
 }
 
 .suscripcion {
+
+    //position: sticky;
+    // bottom: 30px;
+    //background-color: v.$background-color-pri;
+
+
     position: fixed;
-    bottom: 5px;
+    bottom: 15px;
     right: 10px;
     width: 50px;
 
@@ -107,7 +113,16 @@
 
     .suscripcion {
         width: 10%;
+        bottom: 50px;
     }
+}
+
+@include v.tab {
+    .suscripcion {
+        width: 6%;
+        bottom: 70px;
+    }
+
 }
 
 // Animacion a suscripcion
