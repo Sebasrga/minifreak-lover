@@ -10,62 +10,50 @@ main {
             @extend %artist-card;
             background-color: v.$background-color-set;
         }
-        .victor{
+
+        .victor {
             @extend %artist-card;
             background-color: v.$background-color-ter;
         }
-        .yuli{
+
+        .yuli {
             @extend %artist-card;
             background-color: v.$background-color-sep;
         }
-        .redmeans{
+
+        .redmeans {
             @extend %artist-card;
             background-color: v.$background-color-qui;
         }
-        .xliks{
+
+        .xliks {
             @extend %artist-card;
             background-color: v.$background-color-cua;
         }
     }
-}
 
+    @include v.celu {
 
-
-            //@extend %artista-card;
-            //  background-color: v.$background-color-ter;
-            // border-radius: 8px;
-            // overflow: hidden;
-            // display: flex;
-
-            //.artista-info {
-
-                //@include v.flx-bx(column, 10px, 5px, center);
-
-            //    .artista__texto {
-                    //text-align: justify;
-            //    }
-
-                //display: flex;
-                //flex-direction: column;
-                //padding: 10px;
-                //gap: 5px;
-                //justify-content: center;
-           // }
-
-           // .artista__videito {
-                //width: 400px;
-                //height: 300px;
-            //}
-
-
-@media screen and (max-width: 480px) {
-    main {
         .artistas {
-            //flex-direction: column;
             padding: 5px 30px 60px 30px;
 
             .artiatas__item {
                 flex-direction: column;
+            }
+        }
+
+    }
+
+    @include v.tab {
+
+        .artistas {
+            .artiatas__item {
+                flex-direction: column;
+            }
+
+            .xliks {
+                display: flex;
+                align-items: center;
             }
         }
     }

@@ -31,7 +31,9 @@ main {
     }
 }
 
-@media screen and (max-width: 480px) {
+
+
+    @include v.celu{
     main {
         .nuevos-sintes {
             @include v.flx-bx(column, 10px, 5px, flex-start);

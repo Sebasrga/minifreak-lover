@@ -9,7 +9,6 @@
     //justify-content: space-around;
     //padding: 10px 0 0 5px;
 
-
     background: #FFA500;
     background: linear-gradient(0deg, rgba(255, 165, 0, 1) 0%, rgba(255, 165, 0, 1) 91%, rgba(236, 236, 236, 1) 99%);
 
@@ -51,7 +50,7 @@
         padding: 5px 1px 1px 1px;
 
         h2 {
-            font-size: 0.7rem;
+            font-size: 0.6rem;
         }
 
         h3 {
@@ -76,16 +75,11 @@
                 width: 5vw;
             }
         }
+
         h3 {
             font-size: 15px;
         }
-
-
     }
-
-
-
-
 }
 
 // @media screen and (max-width: 480px) {

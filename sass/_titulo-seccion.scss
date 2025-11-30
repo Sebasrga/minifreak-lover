@@ -35,13 +35,22 @@ main {
     }
 }
 
-@media screen and (max-width: 480px) {
-    main {
+main {
+    @include v.celu {
         .titulo-seccion {
             margin-top: 70px;
 
             >h1 {
                 font-size: 1.2rem;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    @include v.tab {
+        .titulo-seccion {
+            >h1 {
+                font-size: 2rem;
                 font-weight: bolder;
             }
         }
